@@ -1,0 +1,44 @@
+// @import './nav';
+
+.header {
+    .container {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding: 44px 20px;
+    }
+}
+
+.logo-link__image {
+    width: 236px;
+    height: 26px;
+}
+
+@media only screen and(max-width: 584px) {
+	.header {
+		.nav {
+			
+			.nav__list {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				margin: -1px;
+				border: 0;
+				padding: 0;
+				clip: rect(0 0 0 0);
+				overflow: hidden;
+			}
+	
+			&::before {
+				// margin: 3px 0;
+				display: inline-block;
+				width: 16px;
+				height: 15px;
+				background-repeat: no-repeat;
+				background-size: 16px 15px;
+				background-image: url(../icons/menu.svg);
+				content: '';
+			}
+		}
+	}
+}

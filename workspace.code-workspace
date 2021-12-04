@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		// {
+		// 	// "path": "../scss-project-for-copy/scss_project-6b3d11aeb911af0f633ab5d17e1d19b0fe20636f"
+		// }
+	],
+	"settings": {
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
+				"savePath": "/css"
+			}
+		],
+		"liveServer.settings.multiRootWorkspaceName": "scss_project_main",
+		"liveServer.settings.port": 5501
+	}
+}
