@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    // background-color: dimgray;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -48,8 +49,4 @@ main {
     width: 100%;
 	padding: 0 20px;
 	margin: 0 auto;
-}
-
-.container--small {
-	width: 1240px;
 }
