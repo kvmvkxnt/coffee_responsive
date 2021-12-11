@@ -125,6 +125,64 @@
                         background-size: 1280px 450px;
                     }
                 }
+
+            .create-hero__inner {
+                width: 100%;
+                // max-height: 400px;
+                height: 100%;
+                background-image: url(../img/2x/create-plan.png);
+                padding: 137px 85px;
+                background-repeat: no-repeat;
+                background-size: 1280px 450px;
+                max-width: 1280px;
+                width: 100%;
+                background-position-x: 30%;
+                border-radius: 10px;
+                margin-bottom: 136px;
+
+                .hero__heading {
+                    font-family: 'Fraunces', serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 72px;
+                    line-height: 72px;
+                    /* identical to box height, or 100% */
+                    
+                    
+                    color: #FEFCF7;
+                    max-width: 485px;
+                    width: 100%;
+                    margin-top: 0;
+                }
+
+                .hero__description {
+                    font-family: 'Barlow', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 162% */
+                    
+                    
+                    color: #FEFCF7;
+                    
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                    max-width: 445px;
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                only screen and (min--moz-device-pixel-ratio: 2),
+                only screen and (-o-min-device-pixel-ratio: 2/1),
+                only screen and (min-device-pixel-ratio: 2),
+                only screen and (min-resolution: 192dpi),
+                only screen and (min-resolution: 2dppx) {
+                    .create-hero__inner {
+                        background-image: url(../img/2x/create-plan.png)
+                    }
+                }
         }
     }
 }
@@ -237,6 +295,49 @@
                         // background-size: 1280px 600px;
                     }
                 }
+
+                .create-hero__inner {
+                    background-image: url(../img/2x/create-plan-tablet.png);
+                    background-size: 689px 400px;
+                    padding: 118px 58px;
+                    max-width: 689px;
+                    min-height: 400px;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 auto;
+                    background-position: right;
+
+                    .hero__heading {
+                        font-size: 48px;
+                    }
+
+                    .hero__description {
+                        font-size: 15px;
+                    }
+                }
+
+
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                only screen and (min--moz-device-pixel-ratio: 2),
+                only screen and (-o-min-device-pixel-ratio: 2/1),
+                only screen and (min-device-pixel-ratio: 2),
+                only screen and (min-resolution: 192dpi),
+                only screen and (min-resolution: 2dppx) {
+                    .hero__inner {
+                        background-image: url('../img/2x/create-plan-tablet@2x.png');
+                        background-size: relative;
+                        background-size: 689px 500px;
+                        background-position: top right;
+                        // max-width: 689px;
+                        // max-height: 500px;
+                        width: 100%;
+                        // background-position: ;
+                        // background-size: 1280px 600px;
+                    }
+                }
+
+
             }
         }
     }  
@@ -311,6 +412,21 @@
                         margin: 0 auto;
                     }
                 }
+
+                .create-hero__inner {
+                    padding: 0 24px;
+                    padding-top: 55px;
+
+                    .hero__heading {
+                        font-size: 40px;
+                        text-align: center;
+                    }
+
+                    .hero__description {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
             }
         }
     }
@@ -363,6 +479,27 @@
                     only screen and (min-resolution: 2dppx) {
                         .special__hero__inner {
                             background-image: url(../img/2x/about-us-mobilem@2x.png);
+                            background-size: 327px 400px;
+                            width: 100%;
+                        }
+                    }
+
+                .create-hero__inner {
+                    background-image: url(../img/2x/create-plan-mobile.png);
+                    background-size: 327px 400px;
+                    max-height: 400px;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                    only screen and (min--moz-device-pixel-ratio: 2),
+                    only screen and (-o-min-device-pixel-ratio: 2/1),
+                    only screen and (min-device-pixel-ratio: 2),
+                    only screen and (min-resolution: 192dpi),
+                    only screen and (min-resolution: 2dppx) {
+                        .create-hero__inner {
+                            background-image: url(../img/2x/create-plan-mobile@2x.png);
                             background-size: 327px 400px;
                             width: 100%;
                         }
