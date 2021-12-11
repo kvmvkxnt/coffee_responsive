@@ -1,6 +1,10 @@
 .main {
+    border-radius: 10px;
+    margin-bottom: 120px;
     .hero {
+        border-radius: 10px;
         .container {
+            border-radius: 10px;
 
             .hero__inner {
 
@@ -17,21 +21,7 @@
                 margin-bottom: 136px;
                 background-size: 1280px 600px;
                 max-width: 1280px;
-            
-        
-    
-            @media only screen and (-webkit-min-device-pixel-ratio: 2),
-                only screen and (min--moz-device-pixel-ratio: 2),
-                only screen and (-o-min-device-pixel-ratio: 2/1),
-                only screen and (min-device-pixel-ratio: 2),
-                only screen and (min-resolution: 192dpi),
-                only screen and (min-resolution: 2dppx) {
-                    .hero__inner {
-                        background-image: url('../img/2x/first-page@2x.png');
-                        // background-position: ;
-                        background-size: 1280px 600px;
-                    }
-                }
+                border-radius: 10px;
 
                 .hero__heading {
                     margin: 0;
@@ -62,7 +52,79 @@
                     opacity: 0.8;
                     margin-bottom: 56px;
                 }
+
             }
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                only screen and (min--moz-device-pixel-ratio: 2),
+                only screen and (-o-min-device-pixel-ratio: 2/1),
+                only screen and (min-device-pixel-ratio: 2),
+                only screen and (min-resolution: 192dpi),
+                only screen and (min-resolution: 2dppx) {
+                    .hero__inner {
+                        background-image: url('../img/2x/first-page@2x.png');
+                        // background-position: ;
+                        background-size: 1280px 600px;
+                    }
+                }
+
+            .special__hero__inner {
+
+                width: 100%;
+                // max-height: 400px;
+                height: 100%;
+                background-image: url(../img/2x/about-us.png);
+                padding: 137px 85px;
+                background-repeat: no-repeat;
+                background-size: 1280px 450px;
+                max-width: 1280px;
+                width: 100%;
+                background-position-x: 30%;
+                border-radius: 10px;
+                margin-bottom: 136px;
+
+                .hero__heading {
+                    font-family: 'Fraunces', serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 40px;
+                    /* identical to box height, or 125% */
+                    
+                    
+                    color: #FEFCF7;
+                }
+
+                .hero__description {
+                    font-family: 'Barlow', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 25px;
+                    /* or 167% */
+                    
+                    
+                    color: #FEFCF7;
+                    
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                    max-width: 445px;
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                only screen and (min--moz-device-pixel-ratio: 2),
+                only screen and (-o-min-device-pixel-ratio: 2/1),
+                only screen and (min-device-pixel-ratio: 2),
+                only screen and (min-resolution: 192dpi),
+                only screen and (min-resolution: 2dppx) {
+                    .special__hero__inner {
+                        background-image: url('../img/2x/about-us@2x.png');
+                        // background-position: ;
+                        background-size: 1280px 450px;
+                    }
+                }
         }
     }
 }
@@ -95,6 +157,7 @@
                     margin-bottom: 136px;
                     background-position: top right;
 
+
                     .hero__heading {
                         font-family: 'Fraunces', serif;
                         font-style: normal;
@@ -119,6 +182,44 @@
                 }
 
                 @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                    only screen and (min--moz-device-pixel-ratio: 2),
+                    only screen and (-o-min-device-pixel-ratio: 2/1),
+                    only screen and (min-device-pixel-ratio: 2),
+                    only screen and (min-resolution: 192dpi),
+                    only screen and (min-resolution: 2dppx) {
+                        .hero__inner {
+                            background-image: url(../img/2x/first-page-tablet@2x);
+                            background-size: 689px 500px;
+                            background-position: top right;
+                            width: 100%;
+                        }
+                    }
+
+                
+
+                .special__hero__inner {
+                    background-image: url(../img/2x/about-us-tablet.png);
+                    background-size: 689px 400px;
+                    padding: 118px 58px;
+                    max-width: 689px;
+                    min-height: 400px;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 auto;
+                    background-position: right;
+
+                    .hero__heading {
+                        font-size: 32px;
+                    }
+
+                    .hero__description {
+                        font-size: 15px;
+                    }
+                }
+
+
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 2),
                 only screen and (min--moz-device-pixel-ratio: 2),
                 only screen and (-o-min-device-pixel-ratio: 2/1),
                 only screen and (min-device-pixel-ratio: 2),
@@ -138,8 +239,7 @@
                 }
             }
         }
-    }
-    
+    }  
 }
 
 @media only screen and (max-width: 534px){
@@ -190,6 +290,32 @@
     }
 }
 
+@media only screen and (max-width: 496px) {
+    .main {
+        .hero {
+            .container {
+                .special__hero__inner {
+                    padding: 0 24px;
+                    padding-top: 111px;
+                    padding-bottom: 87px;
+                    
+                    .hero__heading {
+                        font-size: 28px;
+                        text-align: center;
+                    }
+
+                    .hero__description {
+                        text-align: center;
+                        max-width: 279px;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .main {
         .hero {
@@ -220,6 +346,27 @@
                         // background-size: 1280px 600px;
                     }
                 }
+
+                .special__hero__inner {
+                    background-image: url(../img/2x/about-us-mobilem.png);
+                    background-size: 327px 400px;
+                    max-height: 400px;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                    only screen and (min--moz-device-pixel-ratio: 2),
+                    only screen and (-o-min-device-pixel-ratio: 2/1),
+                    only screen and (min-device-pixel-ratio: 2),
+                    only screen and (min-resolution: 192dpi),
+                    only screen and (min-resolution: 2dppx) {
+                        .special__hero__inner {
+                            background-image: url(../img/2x/about-us-mobilem@2x.png);
+                            background-size: 327px 400px;
+                            width: 100%;
+                        }
+                    }
             }
         }
     }
@@ -233,6 +380,10 @@
                     .hero__heading {
                         font-size: 32px;
                     }
+                }
+
+                .special__hero__inner {
+                    padding: 40px 24px;
                 }
             }
         }

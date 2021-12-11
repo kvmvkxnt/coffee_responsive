@@ -1,0 +1,97 @@
+.headquarters {
+    margin-bottom: 120px;
+    .container {
+        .headquarters__main-title {
+            font-family: 'Fraunces', serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            
+            
+            color: #83888F;
+            
+        }
+
+        .h-i-w__inner {
+            .steps {
+                .step {
+                    max-width: 285px;
+                    width: 100%;
+
+                    &__heading {
+                        &__text {
+                            font-size: 32px;
+                            max-width: max-content;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .step::before {
+                    display: none;
+                }
+            }
+
+            .steps::before {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1042px) {
+    .headquarters {
+        .container {
+            .h-i-w__inner {
+                .steps {
+                    .step {
+                        &__heading {
+                            margin-bottom: 23px;
+                            &__text {
+                                font-size: 24px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .headquarters {
+        .container {
+            align-items: center;
+            text-align: center;
+
+            .headquarters__main-title {
+                margin-bottom: 72px;
+            }
+            .h-i-w__inner {
+                align-items: center;
+                .steps {
+                    flex-direction: column;
+
+                    align-items: center;
+
+                    .step__heading {
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-bottom: 32px;
+                        // max-width: max-content;
+                        .step__heading__text {
+                            text-align: center;
+                            margin: 0 auto;
+                            // margin-bottom: 32px;
+                            // max-width: max-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

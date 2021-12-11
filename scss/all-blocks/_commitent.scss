@@ -1,0 +1,115 @@
+.commitent {
+    margin-bottom: 304px;
+    .container {
+        padding: 0 105px;
+        width: 100%;
+        .commitent__inner {
+            display: flex;
+            // width:fit-content;
+            justify-content: space-between;
+            
+            .commitent__text {
+                // margin-left: calc(33%);
+                // padding: 90px 0;
+                max-width: 540px;
+                width: 100%;
+                margin: auto 0;
+                margin-left: 40px;
+
+                .commitent__title {
+                    font-family: 'Fraunces', serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 48px;
+                    /* identical to box height, or 120% */
+                    
+                    
+                    color: #333D4B;
+                    margin: 0;
+                    margin-bottom: 32px;
+                }
+                
+                .commitent__p {
+                    font-family: 'Barlow', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 162% */
+                    
+                    
+                    color: #333D4B;
+                    
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .commitent {
+        .container {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .commitent {
+        .container {
+            padding: 0 20px;
+            .commitent__inner {
+                .commitent__text {
+                    margin: 0;
+                    margin-left: 35px;
+                    max-width: 339px;
+                    .commitent__title {
+                        font-size: 32px;
+                    }
+
+                    .commitent__p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    .commitent {
+        .container {
+            .commitent__inner {
+
+                flex-direction: column;
+                align-items: center;
+
+                .commitent__img {
+                    margin-bottom: 48px;
+                    // max-width: ;
+                }
+
+                .commitent__text {
+                    margin-left: 0;
+                    max-width: max-content;
+                    text-align: center;
+
+                    .commitent__p {
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .commitent__img {
+        max-width: 270px;
+        width: 100%;
+    }
+}
