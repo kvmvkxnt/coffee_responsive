@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<!-- Header  -->
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container">
 				<a class="logo-link" href="./index.html">
 					<img class="logo-link__image" src="img/logo.svg" alt="Logo image"/>
@@ -78,7 +78,7 @@
 					</div>
 				</div>
             </div>
-        </div> -->
+        </div>
 
         
         <div class="quality">
@@ -88,14 +88,21 @@
 						<h2 class="quality__title">Uncompromising quality</h2>
 						<p class="quality__p">Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>
 					</div>
-					<img src="img/2x/quality.png" srcset="img/2x/quality.png 1x, img/2x/quality@2x.png 2x" alt="coffee" class="quality__img">
+					<picture class="quality__picture">
+						<source class="quality__img" srcset="./img/webP/quality-mobile.webp 1x, ./img/webP/quality-mobile@2x.webp 2x" type="image/webp" media="(max-width:636px)">
+						<source class="quality__img" srcset="./img/webP/quality-tablet.webp 1x, ./img/webP/quality-tablet@2x.webp 2x" type="image/webp" media="(max-width:1170px)">
+						<source class="quality__img" srcset="./img/webP/quality.webp 1x, ./img/webP/quality@2x.webp 2x" type="image/webp">
+						<source class="quality__img" srcset="./img/webP/quality-mobile.jpg 1x, ./img/webP/quality-mobile@2x.jpg 2x" type="image/webp" media="(max-width:636px)">
+						<source class="quality__img" srcset="./img/webP/quality-tablet.jpg 1x, ./img/webP/quality-tablet@2x.jpg 2x" type="image/webp" media="(max-width:1170px)">
+						<img src="./img/webP/quality.jpg" srcset="./img/webP/quality.jpg 1x, ./img/webP/quality@2x.jpg 2x" alt="Image">
+					</picture>
 				</div>
             </div>
             
         </div>
 
         
-        <!-- <div class="headquarters">
+        <div class="headquarters">
             <div class="container">
                 <h3 class="headquarters__main-title h-i-w__title">Our headquarters</h3>
                 <div class="h-i-w__inner">
@@ -192,7 +199,7 @@
 					</ul>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
 		<script src="./scripts/script.js"></script>
 	</body>
